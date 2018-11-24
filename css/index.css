@@ -1,0 +1,255 @@
+/*
+* @Author: andy
+* @Date:   2017-12-09 15:05:46
+* @Last Modified by:   andy
+* @Last Modified time: 2017-12-09 15:05:46
+*/
+/* 先删除默认的内外边距 */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fafafa;
+	width: 640px;
+}
+li {
+	list-style: none; /*  取消li 的小点 */
+}
+
+ .clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+
+ .clearfix {*zoom: 1;}   /* IE6、7 专有 */
+/* 顶部导航栏开始啦 */
+.header {
+	height: 60px;
+	width: 640px;
+	background-color: #fff;
+}
+.inner {
+	width: 640px;
+	height: 60px;
+	/*background-color: pink; */
+	margin: 0 auto;
+	line-height: 100px;
+}
+.logo {
+	float: left;
+}
+.download {
+	float: right;
+}
+
+.download  a:hover {
+	color: #2288f6;
+}
+
+/* banner STAR */
+.banner {
+	height: 620px;
+	width: 640px;
+	background: url(../images/3.jpg) no-repeat top center;
+	background-size: 640px 620px;
+}
+/* banner end */
+
+.service{
+	/* margin-top: 75px; */
+	width: 640px;
+	height: 515px;
+	/* background-color: pink; */
+	margin: 0px auto 0;
+}
+.service-hd {
+	border-top: 25px double #ccc;
+	margin: 0 0px;
+	width: 640px;
+	height: 100px;
+}
+.service-hl {
+	border-top: 25px double #ccc;
+	margin: 0 0px;
+	width: 640px;
+	height: 10px;
+}
+
+
+.service-hd h3 {
+	width: 167px;
+	height: 46px;
+	margin: -15px auto 0;
+}
+.service-hd p {
+	font-size: 16px;
+	color: #966;
+	line-height: 26px;
+	text-align: center;
+	width: 320px;
+	margin: 15px  auto 0;
+	font-family: "宋体";
+
+}
+.service-bd {
+	margin-top: 40px;
+	overflow: hidden;
+}
+.service-bd li {
+	width: 211px;
+	height: 450px;
+	background-color: #fff;
+	float: left;
+	margin: 1px  auto 0;
+	border: 1px solid #e7e8e9;
+}
+.service-bd img {
+
+	width: 200px;
+	height: 132px;
+}
+.service-bd h3 {
+	margin: 40px 35px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	height: 40px;
+}
+.service-bd p {
+	font-size: 10px;
+	color: #966;
+	line-height: 26px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	margin: 15px  auto 0;
+	font-family: "宋体";
+}
+.service-bd a {
+	display: block;
+	width: 148px;
+	height: 38px;
+	border: 1px solid #ff9412;
+	margin: 30px auto 0;
+	text-align: center;
+	line-height: 38px;
+	color: #ff9412;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.service-bd a:hover {
+	color: #fff;
+	background-color: #ff9412;	
+}
+/* 经典案例开始 */
+.case {
+	width: 640px;
+	margin: 105px auto 0;
+}
+.case-bd {
+	position: relative;
+	/* overflow: hidden; */
+}
+.case-bd li {
+	margin-left: 10px;
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+	float: left;
+	position: relative;
+}
+.text {
+	height: 45px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	font-size: 12px;
+}
+.mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5) url(../images/fdj.png) center no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.case-bd li:hover .mask {
+	display: block;
+}
+.left, .right {
+	width: 60px;
+	height: 60px;
+	background: rgba(0,0,0,.2);
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	border-radius: 50%;
+}
+.left {
+	left: -90px;
+}
+.right {
+	right: -90px;
+}
+.case-bd a:hover {
+	background: rgba(0,0,0,.4);
+}
+.media-bd {
+	width: 640px;
+	height: 240px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.media-bd ul {
+	width: 640px;
+}
+.media-bd li {
+	border: 2;
+	width: 210px;
+	height: 60px;
+	float: left;
+	border-right: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer {
+	height: 165px;
+	background-color: #212425;
+	overflow: hidden;
+	margin-top: 10px;
+	width: 640px;
+}
+.subnav {
+	text-align: center;
+	margin-top: 50px;
+	color: #f0f1f1;
+	font-size: 14px;
+}
+.subnav a {
+	color: #f0f1f1;
+	text-decoration: none;
+	padding: 0 5px;
+	font-size: 14px;
+}
+.subnav a:hover {
+	color: #2288f6;
+	text-decoration: underline;
+}
+.footer p {
+	text-align: center;
+	color: #888888;
+	margin-top: 30px;
+}
